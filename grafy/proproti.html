@@ -82,30 +82,27 @@ fetch("./tooltipy.csv")
 .then(response => response.text())
 .then(tooltipy => {
 
-var datakoal = JSON.parse("[" + textkoal + "]");
+  var datakoal = JSON.parse("[" + textkoal + "]");
 
-var dataopoz = JSON.parse("[" + textopoz + "]");
+  var dataopoz = JSON.parse("[" + textopoz + "]");
 
-var tooltipy = tooltipy.split('\n');
+  var tooltipy = tooltipy.split('\n');
 
-var datatt = [];
-var headers = tooltipy[0].split('|');
+  var datatt = [];
+  var headers = tooltipy[0].split('|');
 
-for (var i = 1; i < tooltipy.length; i++) {
-
-  var datatemp = tooltipy[i].split('|');
-  var objtemp = {};
-
-  for (var j = 0; j < datatemp.length; j++) {
-     objtemp[headers[j].trim()] = datatemp[j].trim();
-  }
-
-  datatt.push(objtemp);
+  for (var i = 1; i < tooltipy.length; i++) {
+    var datatemp = tooltipy[i].split('|');
+    var objtemp = {};
+    for (var j = 0; j < datatemp.length; j++) {
+      objtemp[headers[j].trim()] = datatemp[j].trim();
+    }
+    datatt.push(objtemp);
 }
 
 datatt.pop();
 
-JSON.stringify(datatt);
+//JSON.stringify(datatt);
 
 var square = 8;
 
@@ -118,7 +115,6 @@ var config = {
 		height: square
 	},
 	diff: 1,
-
 	// 1 STAN, 2 ODS, 3 KDU-ČSL + nez., 4 ČSSD, 5 ANO, 6 Senátor 21, 7 nezařazení
 	colors: ['#FFFFFF', '#A8CB4A', '#009BD5', '#FFDA05', '#F29400', '#272660', '#CB2D42', '#A0A0A0']
 };
@@ -137,16 +133,6 @@ function getPosition(dataIndex) {
       };
 }
 
-function getYPosition(dataIndex) {
-
-  return (config.grid.height * dataIndex);
-
-}
-
-function getColor(dataValue) {
-  return config.colors[Math.floor(dataValue / config.diff)];
-}
-
 function renderSVG(data, tooltip, box) {
 
     var svg = d3.select('body')
@@ -155,7 +141,7 @@ function renderSVG(data, tooltip, box) {
                   width: config.width + 5,
                   height: config.height + config.title + 5
                 })
-
+    
     var div = d3.select('body').append('div')
                 .attr('class', 'tooltip')
                 .style('opacity', 0);
@@ -165,14 +151,14 @@ function renderSVG(data, tooltip, box) {
       height: config.grid.height - 2,
       x: function(d, i) { return getPosition(i).x; },
       y: function(d, i) { return getPosition(i).y; },
-      fill: function(d) { return getColor(d); }
+      fill: function(d) { return config.colors[d]; }
     })
 
     var row = svg.selectAll('row').data(tooltip).enter().append('rect').attr({
       width: 81 * square + 2,
       height: 10,
       x: 3,
-      y: function(d, i) { return getYPosition(i) + config.title + 3; },
+      y: function(d, i) { return (config.grid.height * i) + config.title + 3; },
       fill: '#fff'
     }).style('fill-opacity', 0)
       .style('opacity', 0)
@@ -195,13 +181,7 @@ function renderSVG(data, tooltip, box) {
         if(d.nazev.length < 150) {
           nazev = '<div class="ttheader">' + d.nazev + '</div>'
         } else {
-          nazev = '<div class="ttheader">' + d.nazev.substring(0, 150);
-          var i = 1;
-          do {
-            nazev = nazev.substring(0, 150 - i);
-            i++;
-          } while (nazev.substring(nazev.length - 1, nazev.length) != ' ');
-          nazev = nazev + '…</div>';
+          nazev = '<div class="ttheader">' + d.nazev.substring(0, 150).split(' ').slice(0, -1).join(' ') + '…</div>'
         }
         div.html(nazev + vysledek +
                  '<div class="ttvotes">' + d.kvorum + ' hlasů ke schválení</div>' +

@@ -50,7 +50,7 @@ var config = {
 	},
 	diff: 1,
 	// 1 STAN, 2 ODS, 3 KDU-ČSL + nez., 4 ČSSD, 5 ANO, 6 Senátor 21, 7 nezařazení
-	colors: ['#FFFFFF', '#A8CB4A', '#009BD5', '#FFDA05', '#F29400', '#272660', '#CB2D42', '#A0A0A0'];
+	colors: ['#FFFFFF', '#A8CB4A', '#009BD5', '#FFDA05', '#F29400', '#272660', '#CB2D42', '#A0A0A0']
 };
 
 function getPosition(dataIndex) {

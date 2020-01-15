@@ -86,26 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./js/byeie.js":
-/*!*********************!*\
-  !*** ./js/byeie.js ***!
-  \*********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("if (navigator.appName === \"Microsoft Internet Explorer\" || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/))) {\n  var warn = document.createElement(\"div\");\n  warn.innerHTML = \"Používáte zastaralý Internet Explorer, takže vám části tohoto webu nemusí fungovat. Navíc to <a target=\\\"_blank\\\" style=\\\"color:white;\\\" rel=\\\"noopener noreferrer\\\" href=\\\"https://www.zive.cz/clanky/microsoft-internet-explorer-neni-prohlizec-prestante-ho-tak-pouzivat/sc-3-a-197149/default.aspx\\\">není bezpečné</a>, zvažte přechod na <a target=\\\"_blank\\\" style=\\\"color:white;\\\" rel=\\\"noopener noreferrer\\\" href=\\\"https://www.mozilla.org/cs/firefox/new/\\\">jiný prohlížeč</a>.\";\n  warn.style.cssText = \"text-align:center;position:absolute;width:100%;height:auto;opacity:1;z-index:100;background-color:#d52834;top:37px;padding-top:4px;padding-bottom:3px;color:white;\";\n  document.body.appendChild(warn);\n}\n\n//# sourceURL=webpack:///./js/byeie.js?");
-
-/***/ }),
-
 /***/ "./js/script.js":
 /*!**********************!*\
   !*** ./js/script.js ***!
   \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _byeie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./byeie */ \"./js/byeie.js\");\n/* harmony import */ var _byeie__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_byeie__WEBPACK_IMPORTED_MODULE_0__);\n // loučíme se s IE\n\n/*\r\n// snadné načtení souboru pro každého!\r\nfetch(\"https://blabla.cz/blabla.json\")\r\n  .then(response => response.json()) // nebo .text(), když to není json\r\n  .then(data => {\r\n    // tady jde provést s daty cokoliv\r\n  });\r\n*/\n\n//# sourceURL=webpack:///./js/script.js?");
+eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nSyntaxError: E:\\\\Dropbox\\\\Data\\\\Samizdat\\\\senat-kdoskym\\\\js\\\\script.js: Unexpected token, expected \\\",\\\" (53:97)\\n\\n\\u001b[0m \\u001b[90m 51 | \\u001b[39m\\tdiff\\u001b[33m:\\u001b[39m \\u001b[35m1\\u001b[39m\\u001b[33m,\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m 52 | \\u001b[39m\\t\\u001b[90m// 1 STAN, 2 ODS, 3 KDU-ČSL + nez., 4 ČSSD, 5 ANO, 6 Senátor 21, 7 nezařazení\\u001b[39m\\u001b[0m\\n\\u001b[0m\\u001b[31m\\u001b[1m>\\u001b[22m\\u001b[39m\\u001b[90m 53 | \\u001b[39m\\tcolors\\u001b[33m:\\u001b[39m [\\u001b[32m'#FFFFFF'\\u001b[39m\\u001b[33m,\\u001b[39m \\u001b[32m'#A8CB4A'\\u001b[39m\\u001b[33m,\\u001b[39m \\u001b[32m'#009BD5'\\u001b[39m\\u001b[33m,\\u001b[39m \\u001b[32m'#FFDA05'\\u001b[39m\\u001b[33m,\\u001b[39m \\u001b[32m'#F29400'\\u001b[39m\\u001b[33m,\\u001b[39m \\u001b[32m'#272660'\\u001b[39m\\u001b[33m,\\u001b[39m \\u001b[32m'#CB2D42'\\u001b[39m\\u001b[33m,\\u001b[39m \\u001b[32m'#A0A0A0'\\u001b[39m]\\u001b[33m;\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m    | \\u001b[39m\\t                                                                                                \\u001b[31m\\u001b[1m^\\u001b[22m\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m 54 | \\u001b[39m}\\u001b[33m;\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m 55 | \\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m 56 | \\u001b[39m\\u001b[36mfunction\\u001b[39m getPosition(dataIndex) {\\u001b[0m\\n    at Object.raise (E:\\\\Dropbox\\\\Data\\\\Samizdat\\\\senat-kdoskym\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:6400:17)\\n    at Object.unexpected (E:\\\\Dropbox\\\\Data\\\\Samizdat\\\\senat-kdoskym\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:7728:16)\\n    at Object.expect (E:\\\\Dropbox\\\\Data\\\\Samizdat\\\\senat-kdoskym\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:7714:28)\\n    at Object.parseObj (E:\\\\Dropbox\\\\Data\\\\Samizdat\\\\senat-kdoskym\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:9249:14)\\n    at Object.parseExprAtom (E:\\\\Dropbox\\\\Data\\\\Samizdat\\\\senat-kdoskym\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:8883:28)\\n    at Object.parseExprAtom (E:\\\\Dropbox\\\\Data\\\\Samizdat\\\\senat-kdoskym\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:3609:20)\\n    at Object.parseExprSubscripts (E:\\\\Dropbox\\\\Data\\\\Samizdat\\\\senat-kdoskym\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:8507:23)\\n    at Object.parseMaybeUnary (E:\\\\Dropbox\\\\Data\\\\Samizdat\\\\senat-kdoskym\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:8487:21)\\n    at Object.parseExprOps (E:\\\\Dropbox\\\\Data\\\\Samizdat\\\\senat-kdoskym\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:8353:23)\\n    at Object.parseMaybeConditional (E:\\\\Dropbox\\\\Data\\\\Samizdat\\\\senat-kdoskym\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:8326:23)\");\n\n//# sourceURL=webpack:///./js/script.js?");
 
 /***/ })
 

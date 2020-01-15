@@ -1,0 +1,55 @@
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    font: 12px sans-serif;
+    width: 300px;
+    height: 140px;
+    padding: 5px;
+    background: #fff;
+    border-width: 1px;
+    border-color: #000;
+    border-style: solid;
+    pointer-events: none;
+}
+
+svg {
+  shape-rendering: crispEdges;
+}
+
+.ttheader {
+  font: 16px sans-serif;
+}
+
+.ttcajk {
+  font: 14px sans-serif;
+  font-weight: bold;
+  color: green;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.ttnecajk {
+  font: 14px sans-serif;
+  font-weight: bold;
+  color: red;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.ttborcus {
+  font: 14px sans-serif;
+  font-weight: bold;
+  color: orange;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.ttvotes {
+  font: 12px sans-serif;
+  padding-top: 5px;
+}
+
+.title {
+  font: 20px sans-serif;
+  color: red;
+}

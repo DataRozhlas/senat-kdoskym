@@ -61,8 +61,8 @@ svg {
 }
 
 .title {
-  font: 20px sans-serif;
-  color: red;
+  font: 16px sans-serif;
+  font-weight: bold;
 }
 
 </style>
@@ -104,7 +104,7 @@ datatt.pop();
 
 //JSON.stringify(datatt);
 
-var square = 8;
+var square = 6;
 
 var config = {
 	width: 81 * square,
@@ -147,8 +147,8 @@ function renderSVG(data, tooltip, box) {
                 .style('opacity', 0);
 
     svg.selectAll('rect').data(data).enter().append('rect').attr({
-      width: config.grid.width - 2,
-      height: config.grid.height - 2,
+      width: config.grid.width - 1,
+      height: config.grid.height - 1,
       x: function(d, i) { return getPosition(i).x; },
       y: function(d, i) { return getPosition(i).y; },
       fill: function(d) { return config.colors[d]; }

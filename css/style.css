@@ -1,3 +1,15 @@
+@media only screen and (max-width: 768px) {
+  #desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #mob1, #mob2 {
+    display: none;
+  }
+}
+
 div.tooltip {
     position: absolute;
     text-align: center;

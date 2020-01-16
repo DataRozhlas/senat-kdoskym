@@ -79,8 +79,8 @@ Senátory STAN nejčastěji najdeme na obou stranách hlasování: část z nich
 
 Menší rivalita Senátu a schopnost senátorů najít kompromis ilustruje graf všech 589 hlasování v Senátu mezi ustavující schůzí 14. listopadu 2018 a dosud posledním zasedáním v polovině minulého prosince. Na rozdíl od Poslanecké sněmovny jsou pro Senát typické velké koalice, kterých se účastní většina stran: znamená to, že v grafu je podstatně zaplněnější levý sloupec, který ukazuje členy vítězné koalice. Naopak pravý sloupec, který shromažďuje poražené senátory, je poloprázdný.
 
-<wide><iframe src="https://data.irozhlas.cz/senat-kdoskym/grafy/proproti.html" width="100%" height="3760" frameborder="0" scrolling="no"></iframe></wide>
+<wide><div id="desktop"><iframe src="https://data.irozhlas.cz/senat-kdoskym/grafy/proproti.html" width="100%" height="3760" frameborder="0" scrolling="no"></iframe></div></wide>
 
-<iframe src="https://data.irozhlas.cz/senat-kdoskym/grafy/pro.html" width="100%" height="2400" frameborder="0" scrolling="no"></iframe>
+<div id="mob1"><iframe src="https://data.irozhlas.cz/senat-kdoskym/grafy/pro.html" width="100%" height="2400" frameborder="0" scrolling="no"></iframe></div>
 
-<iframe src="https://data.irozhlas.cz/senat-kdoskym/grafy/proti.html" width="100%" height="2400" frameborder="0" scrolling="no"></iframe>
+<div id="mob2"><iframe src="https://data.irozhlas.cz/senat-kdoskym/grafy/proti.html" width="100%" height="2400" frameborder="0" scrolling="no"></iframe></div>

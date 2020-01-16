@@ -250,7 +250,7 @@
 	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
 
-	<style>ol.snowfall,ul.snowfall{list-style:initial!important;font-size:medium!important;line-height:1.5!important}ol.snowfall>li,ul.snowfall>li{background:0 0!important;margin:0!important;padding:0!important}hr.snowfall{max-width:none!important}div.tooltip{position:absolute;text-align:center;font:12px sans-serif;width:300px;height:160px;padding:5px;background:#fff;border-width:1px;border-color:#000;border-style:solid;pointer-events:none}svg{shape-rendering:crispEdges}.ttheader{font:14px sans-serif}.ttcajk{font:14px sans-serif;font-weight:700;color:green;padding-top:5px;padding-bottom:5px}.ttnecajk{font:14px sans-serif;font-weight:700;color:red;padding-top:5px;padding-bottom:5px}.ttborcus{font:14px sans-serif;font-weight:700;color:orange;padding-top:5px;padding-bottom:5px}.ttvotes{font:12px sans-serif;padding-top:5px}.title{font:16px sans-serif;font-weight:700}</style>
+	<style>ol.snowfall,ul.snowfall{list-style:initial!important;font-size:medium!important;line-height:1.5!important}ol.snowfall>li,ul.snowfall>li{background:0 0!important;margin:0!important;padding:0!important}hr.snowfall{max-width:none!important}@media only screen and (max-width:768px){#desktop{display:none}}@media only screen and (min-width:769px){#mob1,#mob2{display:none}}div.tooltip{position:absolute;text-align:center;font:12px sans-serif;width:300px;height:160px;padding:5px;background:#fff;border-width:1px;border-color:#000;border-style:solid;pointer-events:none}svg{shape-rendering:crispEdges}.ttheader{font:14px sans-serif}.ttcajk{font:14px sans-serif;font-weight:700;color:green;padding-top:5px;padding-bottom:5px}.ttnecajk{font:14px sans-serif;font-weight:700;color:red;padding-top:5px;padding-bottom:5px}.ttborcus{font:14px sans-serif;font-weight:700;color:orange;padding-top:5px;padding-bottom:5px}.ttvotes{font:12px sans-serif;padding-top:5px}.title{font:16px sans-serif;font-weight:700}</style>
 
 	<div class="row-main row-main--narrow">
 		<p class="text-bold text-lg">
@@ -296,11 +296,11 @@
 <p>„Obecně je fungování Senátu víc konsensuální, kompromisní,“ pokračuje Švec. „Poslanecká sněmovna je mnohem více konkurenční. Souvisí to s tím, že vláda je odpovědná právě Poslanecké sněmovně a většina návrhů jsou návrhy vládní.“</p>
 <p>„To, že v Senátu nehraje stranická politika takovou roli jako názor jednotlivých senátorů, je podle mě jeho výhoda,“ dodává. „Ostatně dřív byl Senát prezentován jako rada moudrých, sněm politiků, kteří mají nějaké zkušenosti. Proto je taky možné kandidovat až ve čtyřiceti letech. I když připouštím, že pokud senátní kluby nejsou soudržné a nemají jednotný názor, může to někdy zákonům uškodit.“</p>
 <p>Menší rivalita Senátu a schopnost senátorů najít kompromis ilustruje graf všech 589 hlasování v Senátu mezi ustavující schůzí 14. listopadu 2018 a dosud posledním zasedáním v polovině minulého prosince. Na rozdíl od Poslanecké sněmovny jsou pro Senát typické velké koalice, kterých se účastní většina stran: znamená to, že v grafu je podstatně zaplněnější levý sloupec, který ukazuje členy vítězné koalice. Naopak pravý sloupec, který shromažďuje poražené senátory, je poloprázdný.</p>
-</div><div class="row-main row-main--article"><iframe src="https://data.irozhlas.cz/senat-kdoskym/grafy/proproti.html" width="100%" height="3760" frameborder="0" scrolling="no"></iframe></div><div class="row-main row-main--narrow">
+</div><div class="row-main row-main--article"><div id="desktop"><iframe src="https://data.irozhlas.cz/senat-kdoskym/grafy/proproti.html" width="100%" height="3760" frameborder="0" scrolling="no"></iframe></div></div><div class="row-main row-main--narrow">
 
-<iframe src="https://data.irozhlas.cz/senat-kdoskym/grafy/pro.html" width="100%" height="2400" frameborder="0" scrolling="no"></iframe>
+<div id="mob1"><iframe src="https://data.irozhlas.cz/senat-kdoskym/grafy/pro.html" width="100%" height="2400" frameborder="0" scrolling="no"></iframe></div>
 
-<iframe src="https://data.irozhlas.cz/senat-kdoskym/grafy/proti.html" width="100%" height="2400" frameborder="0" scrolling="no"></iframe>
+<div id="mob2"><iframe src="https://data.irozhlas.cz/senat-kdoskym/grafy/proti.html" width="100%" height="2400" frameborder="0" scrolling="no"></iframe></div>
 
 
 		<p class="meta meta--right meta--big">

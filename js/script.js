@@ -74,6 +74,7 @@ function renderSVG(data, tooltip, box, divId, odsunx, odsuny) {
 				.style('stroke-width', 1)
 
 	if (document.getElementById("koberec1").offsetWidth >= 1000) { // mobil bez tooltipu, sry :/
+
 		var div = d3.select(divId)
 		.append('div')
 		.attr('class', 'tooltip')
@@ -127,10 +128,6 @@ function renderSVG(data, tooltip, box, divId, odsunx, odsuny) {
 			  .style('opacity', 0)
 		})
 	}
-
-
-
-
 
     svg.append("text")
 		.attr("x", config.width/3)

@@ -1,14 +1,14 @@
 ﻿import "./byeie"; // loučíme se s IE
 
-fetch("./grafy/vyb_koalice.csv")
+fetch("dev.datarozhlas.cz/senat-kdoskym/grafy/vyb_koalice.csv")
 .then(response => response.text())
 .then(textkoal => {
 
-fetch("./grafy/vyb_opozice.csv")
+fetch("dev.datarozhlas.cz/senat-kdoskym/grafy/vyb_opozice.csv")
 .then(response => response.text())
 .then(textopoz => {
 
-fetch("./grafy/vyb_tooltipy.csv")
+fetch("dev.datarozhlas.cz/senat-kdoskym/grafy/vyb_tooltipy.csv")
 .then(response => response.text())
 .then(tooltipy => {
 
@@ -154,15 +154,15 @@ function renderSVG(data, tooltip, box) {
 
 });
 
-fetch("./grafy/koalice.csv")
+fetch("dev.datarozhlas.cz/senat-kdoskym/grafy/koalice.csv")
 .then(response => response.text())
 .then(textkoal => {
 
-fetch("./grafy/opozice.csv")
+fetch("dev.datarozhlas.cz/senat-kdoskym/grafy/opozice.csv")
 .then(response => response.text())
 .then(textopoz => {
 
-fetch("./grafy/tooltipy.csv")
+fetch("dev.datarozhlas.cz/senat-kdoskym/grafy/tooltipy.csv")
 .then(response => response.text())
 .then(tooltipy => {
 

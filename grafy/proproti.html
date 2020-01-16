@@ -164,8 +164,7 @@ function renderSVG(data, tooltip, box, odsunx, odsuny) {
     row.on('mouseover', function(d) {
         div.transition()
            .duration(200)
-           .style('opacity', .9)
-           .style('z-index', 300)
+           .style('opacity', .9);
         var vysledek;
         if(d.vysledek == 'Přijato') {
           vysledek = '<div class="ttcajk">Schváleno</div>';

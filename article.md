@@ -11,9 +11,9 @@ Do analýzy bylo zahrnuto všech dosavadních 589 hlasování, která se uskute�
 
 Mimo jiné se ukázalo, že zákonodárci, kteří v horní komoře Parlamentu často zvednou ruku jinak než jejich klub, jsou Jiří Čunek (KDU-ČSL), Jiří Dienstbier (ČSSD), Ivo Valenta (ODS) nebo Jaroslav Zeman (STAN).
 
-<wide><div><img src="https://dev.datarozhlas.cz/senat-kdoskym/grafy/kdoskym2000.png" style="width:100%"></div></wide>
+<wide><div><img src="https://data.irozhlas.cz/senat-kdoskym/grafy/kdoskym2000.png" style="width:100%"></div></wide>
 
-<wide><div><img src="https://dev.datarozhlas.cz/senat-kdoskym/grafy/legenda.png" style="width:80%"></div></wide>
+<wide><div><img src="https://data.irozhlas.cz/senat-kdoskym/grafy/legenda.png" style="width:80%"></div></wide>
 
 Jak data číst? [Fyzikální model](https://en.wikipedia.org/wiki/Force-directed_graph_drawing) umístí pravidelné spojence při hlasování na plátně blíž k sobě, a naopak: ty, kdo často hlasují odlišně, odsune také v grafu. Vazby mezi dvojicemi senátorů s osmdesátiprocentní a vyšší shodou jsou znázorněny viditelně, slabší shodu kvůli přehlednosti grafu neukazujeme. Silnější linka znamená shodu výrazně nad osmdesát procent.
 
@@ -43,7 +43,7 @@ Graf ukazuje, že určující silou pro senátní hlasování je koalice mezi k�
 
 Situace se ovšem zásadně změní, pokud vynecháme procedurální hlasování, kde je obvykle Senát poměrně jednotný, a další nekonfliktní body programu. U padesáti nejtěsnějších hlasování – kde často rozhodl jediný hlas – vypadá graf odlišně.
 
-<wide><div><img src="https://dev.datarozhlas.cz/senat-kdoskym/grafy/kdoskymuzsi2000.png" style="width:100%"></div></wide>
+<wide><div><img src="https://data.irozhlas.cz/senat-kdoskym/grafy/kdoskymuzsi2000.png" style="width:100%"></div></wide>
 
 ANO ve středu grafu naznačuje, že si strana premiéra Andreje Babiše s podporou sociálních demokratů dokáže klíčová hlasování pohlídat. Naopak koalice KDU-ČSL, STAN a liberálních senátorů v těsných hlasováních selhává. Nejednotní jsou zejména senátoři klubu Starostů a nezávislých, jak prozrazuje jejich pozice na okraji grafu.
 
@@ -79,5 +79,8 @@ Senátory STAN nejčastěji najdeme na obou stranách hlasování: část z nich
 
 Menší rivalita Senátu a schopnost senátorů najít kompromis ilustruje graf všech 589 hlasování v Senátu mezi ustavující schůzí 14. listopadu 2018 a dosud posledním zasedáním v polovině minulého prosince. Na rozdíl od Poslanecké sněmovny jsou pro Senát typické velké koalice, kterých se účastní většina stran: znamená to, že v grafu je podstatně zaplněnější levý sloupec, který ukazuje členy vítězné koalice. Naopak pravý sloupec, který shromažďuje poražené senátory, je poloprázdný.
 
-<wide><div><img src="https://www.irozhlas.cz/sites/default/files/uploader/komplet1000_200116-190147_jab.png" style="width:100%"></div></wide>
+<wide><iframe src="https://data.irozhlas.cz/senat-kdoskym/grafy/proproti.html" width="100%" height="3700" frameborder="0" scrolling="no"></iframe></wide>
 
+<iframe src="https://data.irozhlas.cz/senat-kdoskym/grafy/pro.html" width="100%" height="3700" frameborder="0" scrolling="no"></iframe>
+
+<iframe src="https://data.irozhlas.cz/senat-kdoskym/grafy/proti.html" width="100%" height="3700" frameborder="0" scrolling="no"></iframe>

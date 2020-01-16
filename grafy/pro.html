@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<style>
+
+svg {
+  shape-rendering: crispEdges;
+}
+
+.title {
+  font: 12px sans-serif;
+  font-weight: bold;
+}
+
+</style>
+
+<body>
+<script>
+
+fetch("https://data.irozhlas.cz/senat-kdoskym/grafy/koalice.csv")
+.then(response => response.text())
+.then(textkoal => {
+
+var datakoal = JSON.parse("[" + textkoal + "]");
+
+var square = 4;
+
+var config = {
+  width: 81 * square,
+  height: 589 * square,
+  title: 20,
+  grid: {
+    width: square,
+    height: square
+  },
+  diff: 1,
+  // 1 STAN, 2 ODS, 3 KDU-ČSL + nez., 4 ČSSD, 5 ANO, 6 Senátor 21, 7 nezařazení
+  colors: ['#FFFFFF', '#A8CB4A', '#009BD5', '#FFDA05', '#F29400', '#272660', '#CB2D42', '#A0A0A0']
+};
+
+function getPosition(dataIndex) {
+  if(!dataIndex) return {x: 5, y: config.title + 5};
+
+  var nthColumn = dataIndex % (config.width / config.grid.width),
+      nthRow = Math.floor(dataIndex / (config.height / config.grid.height / (config.height / config.width)));
+
+  var columnWidth = config.grid.width,
+      rowHeight = config.grid.height;
+      return {
+        x: columnWidth * nthColumn + 5,
+        y: rowHeight * nthRow + config.title + 5
+      };
+}
+
+function renderSVG(data) {
+
+    var svg = d3.select('body')
+                .append('svg')
+                .attr({
+                  width: config.width + 5,
+                  height: config.height + config.title + 5
+                })
+
+    var div = d3.select('body').append('div')
+                .attr('class', 'tooltip')
+                .style('opacity', 0);
+
+    svg.selectAll('rect').data(data).enter().append('rect').attr({
+      width: config.grid.width - 1,
+      height: config.grid.height - 1,
+      x: function(d, i) { return getPosition(i).x; },
+      y: function(d, i) { return getPosition(i).y; },
+      fill: function(d) { return config.colors[d]; }
+    })
+
+    var text = svg.append("text")
+                    .attr("x", config.width/2)
+                    .attr("y", 15)
+                    .attr("text-anchor", "middle")
+                    .attr("class", "title")
+                    .text("VÍTĚZOVÉ HLASOVÁNÍ");
+}
+
+renderSVG(datakoal);
+
+});
+
+</script>
+
+</body>
+</html>

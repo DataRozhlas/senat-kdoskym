@@ -70,15 +70,15 @@ svg {
 <body>
 <script>
 
-fetch("./koalice.csv")
+fetch("https://data.irozhlas.cz/senat-kdoskym/grafy/koalice.csv")
 .then(response => response.text())
 .then(textkoal => {
 
-fetch("./opozice.csv")
+fetch("https://data.irozhlas.cz/senat-kdoskym/grafy/opozice.csv")
 .then(response => response.text())
 .then(textopoz => {
 
-fetch("./tooltipy.csv")
+fetch("https://data.irozhlas.cz/senat-kdoskym/grafy/tooltipy.csv")
 .then(response => response.text())
 .then(tooltipy => {
 
@@ -99,10 +99,6 @@ fetch("./tooltipy.csv")
     }
     datatt.push(objtemp);
 }
-
-datatt.pop();
-
-//JSON.stringify(datatt);
 
 var square = 6;
 

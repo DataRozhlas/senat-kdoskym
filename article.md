@@ -9,7 +9,7 @@ options: [] #wide, noheader (, nopic)
 
 Do analýzy bylo zahrnuto všech dosavadních 589 hlasování, která se uskutečnila v aktuálním senátním období, tedy od podzimu 2018.
 
-Mimo jiné se ukázalo, že zákonodárci, kteří v horní komoře Parlamentu často zvednou ruku jinak než jejich klub, jsou Jiří Čunek (KDU-ČSL), Jiří Dienstbier (ČSSD), Ivo Valenta (ODS) nebo Jaroslav Zeman (STAN).
+Mimo jiné se ukázalo, že zákonodárci, kteří v horní komoře Parlamentu často zvednou ruku jinak než jejich klub, jsou Jiří Čunek (KDU-ČSL), Jiří Dienstbier (ČSSD), Ivo Valenta (nestraník v senátním klubu ODS) nebo Jaroslav Zeman (ODS).
 
 <wide><div><img src="https://data.irozhlas.cz/senat-kdoskym/grafy/kdoskym2000.png" style="width:100%"></div></wide>
 
@@ -17,7 +17,7 @@ Mimo jiné se ukázalo, že zákonodárci, kteří v horní komoře Parlamentu �
 
 Jak data číst? [Fyzikální model](https://en.wikipedia.org/wiki/Force-directed_graph_drawing) umístí pravidelné spojence při hlasování na plátně blíž k sobě, a naopak: ty, kdo často hlasují odlišně, odsune také v grafu. Vazby mezi dvojicemi senátorů s osmdesátiprocentní a vyšší shodou jsou znázorněny viditelně, slabší shodu kvůli přehlednosti grafu neukazujeme. Silnější linka znamená shodu výrazně nad osmdesát procent.
 
-„Dá se na tom dobře ukázat disciplína, soudržnost, jednotlivých senátních klubů – pokud by byli hodně blízko u sebe, jsou ideologicky semknutí,“ vysvětluje pro iROZHLAS.cz politolog Roman Chytilek z Fakulty sociálních studií Masarykovy univerzity v Brně.
+„Dá se na tom dobře ukázat disciplína, soudržnost jednotlivých senátních klubů – pokud by byli hodně blízko u sebe, jsou ideologicky semknutí,“ vysvětluje pro iROZHLAS.cz politolog Roman Chytilek z Fakulty sociálních studií Masarykovy univerzity v Brně.
 
 „To, že vidíme ‚hnízdo‘ obsazené více barvami, možná naznačuje, že vzniká blok stran a nezávislých senátorů, kteří hlasují shodně,“ pokračuje. „V momentu, kdy nějaký senátor leží daleko, můžeme vyvodit, že často hlasuje v rozporu se svým klubem.“
 
@@ -69,9 +69,9 @@ Levá část grafu pak prezentuje vítěznou koalici při daném hlasování; po
 
 Senátory STAN nejčastěji najdeme na obou stranách hlasování: část z nich je většinou pro, část proti, málokdy zaujmou jednotnou pozici.
 
-„Disidentství v Senátu ale není tak podstatné, protože na něm nezávisí osud vlády,“ vysvětluje politolog Roman Chytilek z Masarykovy univerzity. „Spíš to naznačuje, že jsou tam senátoři, kteří se nebojí jít proti míněné své strany. Častěji vyjadřují svá osobní přesvědčení. Může to souviset s tím, že volební odvod, ve kterém byli zvoleni, je v některých charakteristikách hodně odlišný od ostatních.“
+„Disidentství v Senátu ale není tak podstatné, protože na něm nezávisí osud vlády,“ vysvětluje politolog Roman Chytilek z Masarykovy univerzity. „Spíš to naznačuje, že jsou tam senátoři, kteří se nebojí jít proti mínění své strany. Častěji vyjadřují svá osobní přesvědčení. Může to souviset s tím, že volební obvod, ve kterém byli zvoleni, je v některých charakteristikách hodně odlišný od ostatních.“
 
-„Senát má mnohem více času na probírání návrhů zákonů, může se jim věnovat více do hloubky,“ doplňuje ho Kamil Švec. „Tomu odpovídají i senátní diskuze, které jsou méně vyhrocené, méně politické. Nejsou tak rozštěpené podle politického stranictví.“
+„Senát má mnohem více času na probírání návrhů zákonů, může se jim věnovat více do hloubky,“ doplňuje ho Kamil Švec. „Tomu odpovídají i senátní diskuse, které jsou méně vyhrocené, méně politické. Nejsou tak rozštěpené podle politického stranictví.“
 
 „Obecně je fungování Senátu víc konsensuální, kompromisní,“ pokračuje Švec. „Poslanecká sněmovna je mnohem více konkurenční. Souvisí to s tím, že vláda je odpovědná právě Poslanecké sněmovně a většina návrhů jsou návrhy vládní.“
 
@@ -81,6 +81,6 @@ Menší rivalita Senátu a schopnost senátorů najít kompromis ilustruje graf 
 
 <wide><div id="desktop"><iframe src="https://data.irozhlas.cz/senat-kdoskym/grafy/proproti.html" width="100%" height="3760" frameborder="0" scrolling="no"></iframe></div></wide>
 
-<div id="mob1"><iframe src="https://data.irozhlas.cz/senat-kdoskym/grafy/pro.html" width="100%" height="2400" frameborder="0" scrolling="no"></iframe></div>
+<div id="mob1"><iframe src="https://data.irozhlas.cz/senat-kdoskym/grafy/pro.html" width="100%" height="1800" frameborder="0" scrolling="no"></iframe></div>
 
-<div id="mob2"><iframe src="https://data.irozhlas.cz/senat-kdoskym/grafy/proti.html" width="100%" height="2400" frameborder="0" scrolling="no"></iframe></div>
+<div id="mob2"><iframe src="https://data.irozhlas.cz/senat-kdoskym/grafy/proti.html" width="100%" height="1800" frameborder="0" scrolling="no"></iframe></div>
